@@ -1,14 +1,13 @@
-<section class="admin-dashboard-index">
-
-  <header class="page-header">
-    <h1>Admin &raquo; Dashboard</h1>
-  </header>
-
-  <div class="card">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Number of different types of products: <%= @products %>    
-    <button type="button" class="btn btn-outline-success"><%= link_to "Product List", admin_products_path %></button></li>
-    <li class="list-group-item">Number of categories: <%= @categories %></li>
-  </ul>
-</div>
-</section>
+<header class="page-header">
+<h1>Admin &raquo; Dashboard</h1>
+</header>
+<h5>
+<table class="table table-bordered">
+  <tr>
+    <td> Total Number of Products types: </td>
+    <td> 
+    <a href="admin/products"> <%= @total_products %> </a>
+    <td> <%= link_to  @total_products, [:admin, :products] %>
+    </td>
+  <tr>
+  <tr>
